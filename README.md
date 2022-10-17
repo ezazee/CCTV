@@ -1,2 +1,1 @@
-# sister-kominda
-Sister Kominda Badan Intelejen Jawa Timur
+Anuan bang Somat
