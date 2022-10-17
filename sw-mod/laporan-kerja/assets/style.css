@@ -1,0 +1,1021 @@
+body {
+  background: rgb(0, 195, 180) !important;
+  color: #f3f3f3 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#tibo {
+  background: inherit;
+  margin-top: 16px;
+  padding-left: 0px;
+}
+
+#tibo .mt-4 {
+  margin-top: 4px;
+}
+
+#tibo .ml-16 {
+  margin-left: 16px;
+}
+
+#tibo .mr-16 {
+  margin-right: 16px;
+}
+
+#tibo .mb-16 {
+  margin-bottom: 16px;
+}
+
+#tibo .none {
+  display: none;
+}
+
+#tibo .block {
+  display: block;
+  transition: 1s;
+}
+
+#tibo label.title {
+  vertical-align: middle;
+  padding-left: 16px;
+  padding-top: 2px;
+}
+
+#tibo form {
+  background: #fff;
+  border-radius: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+}
+
+#tibo form .empty {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+#tibo form label {
+  color: #787878;
+}
+
+#tibo input,
+#tibo select,
+#tibo textarea {
+  border-radius: 8px;
+  padding-bottom: 11px;
+}
+
+#tibo input::placeholder,
+#tibo select::placeholder,
+#tibo textarea::placeholder {
+  color: #ccc;
+  font-size: 12px;
+  padding-bottom: 11px;
+}
+
+#tibo label > input[type='radio'] {
+  display: none;
+}
+
+#tibo label.radio {
+  margin-right: 8px;
+}
+
+#tibo label > input[type='radio'] + *::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+
+#tibo label > input[type='radio']:checked + *::before {
+  background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);
+  border-color: teal;
+}
+
+#tibo label > input[type='radio']:checked + * {
+  color: teal;
+}
+
+#tibo form .input-group textarea.icon-right {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+#tibo form .input-group input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 0px;
+  padding-bottom: 11px;
+}
+
+#tibo form .icon-before {
+  border-left: 1px solid #ced4da !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-right: none !important;
+  background: none !important;
+}
+
+#tibo form .input-group input.two {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-right: 0px;
+  padding-bottom: 11px;
+  border-left: none;
+}
+
+#tibo form .input-group span.input-group-text {
+  background: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #555;
+  border-left: none;
+}
+
+#tibo form .input-group .input-group-append {
+  cursor: pointer;
+}
+
+#tibo form .readimage {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+
+/*ICON*/
+#tibo ion-icon {
+  --ionicon-stroke-width: 128px;
+}
+
+/*BUTTON*/
+#tibo button.btn-form {
+  border-radius: 50px;
+  background: rgb(0, 195, 180) !important;
+  border: none;
+  width: 100%;
+}
+
+#tibo button.btn-form span ion-icon {
+  padding-top: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #198ece;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #198ece;
+}
+
+#tibo #list-laporan {
+  background: #fff;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 90vh;
+  min-height: 20rem;
+  overflow-y: auto;
+  margin: 0;
+}
+
+#tibo #list-laporan input.right-icon {
+  border-right: none !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+#tibo #list-laporan span.right-icon {
+  background: none;
+}
+
+#tibo #list-laporan span.right-icon:hover {
+  background: #f3f3ff;
+  cursor: pointer;
+}
+
+#tibo #list-laporan #card-container {
+  /* height: 26rem; */
+  /* min-height: 20rem; */
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+#tibo #list-laporan .card-laporan {
+  background: #00c3b5;
+  background: -webkit-linear-gradient(top left, #00c3b5, #1b89d1);
+  background: -moz-linear-gradient(top left, #00c3b5, #1b89d1);
+  background: linear-gradient(to bottom right, #00c3b5, #1b89d1);
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.23);
+  color: white;
+}
+
+#tibo #list-laporan .card-laporan .btn-card {
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #00c3b4;
+  border: 0px;
+}
+
+#tibo #list-laporan .card-laporan .btn-card:hover {
+  background: #047c73;
+}
+
+#tibo #list-laporan div.empty {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/*Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body {
+    background: rgb(0, 195, 180) !important;
+    color: #f3f3f3 !important;
+  }
+
+  #tibo {
+    background: inherit;
+    margin-top: 16px;
+    padding-left: 0px;
+  }
+
+  #tibo .mt-4 {
+    margin-top: 4px;
+  }
+
+  #tibo .ml-16 {
+    margin-left: 16px;
+  }
+
+  #tibo .mr-16 {
+    margin-right: 16px;
+  }
+
+  #tibo .mb-16 {
+    margin-bottom: 16px;
+  }
+
+  #tibo .none {
+    display: none;
+  }
+
+  #tibo .block {
+    display: block;
+    transition: 1s;
+  }
+
+  #tibo label.title {
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-top: 2px;
+  }
+
+  #tibo form {
+    background: #fff;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+  }
+
+  #tibo form .empty {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+
+  #tibo form label {
+    color: #787878;
+  }
+
+  #tibo input,
+  #tibo select,
+  #tibo textarea {
+    border-radius: 8px;
+    padding-bottom: 11px;
+  }
+
+  #tibo input::placeholder,
+  #tibo select::placeholder,
+  #tibo textarea::placeholder {
+    color: #ccc;
+    font-size: 12px;
+    padding-bottom: 11px;
+  }
+
+  #tibo label > input[type='radio'] {
+    display: none;
+  }
+
+  #tibo label.radio {
+    margin-right: 8px;
+  }
+
+  #tibo label > input[type='radio'] + *::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+
+  #tibo label > input[type='radio']:checked + *::before {
+    background: radial-gradient(
+      teal 0%,
+      teal 40%,
+      transparent 50%,
+      transparent
+    );
+    border-color: teal;
+  }
+
+  #tibo label > input[type='radio']:checked + * {
+    color: teal;
+  }
+
+  #tibo form .input-group textarea.icon-right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+  }
+
+  #tibo form .input-group input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 0px;
+    padding-bottom: 11px;
+  }
+
+  #tibo form .icon-before {
+    border-left: 1px solid #ced4da !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: none !important;
+    background: none !important;
+  }
+
+  #tibo form .input-group input.two {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-right: 0px;
+    padding-bottom: 11px;
+    border-left: none;
+  }
+
+  #tibo form .input-group span.input-group-text {
+    background: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #555;
+    border-left: none;
+  }
+
+  #tibo form .input-group .input-group-append {
+    cursor: pointer;
+  }
+
+  #tibo form .readimage {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+
+  /*ICON*/
+  #tibo ion-icon {
+    --ionicon-stroke-width: 128px;
+  }
+
+  /*BUTTON*/
+  #tibo button.btn-form {
+    border-radius: 50px;
+    background: rgb(0, 195, 180) !important;
+    border: none;
+    width: 100%;
+  }
+
+  #tibo button.btn-form span ion-icon {
+    padding-top: 8px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: rgb(0, 195, 180) !important;
+    color: #f3f3f3 !important;
+  }
+
+  #tibo {
+    background: inherit;
+    margin-top: 16px;
+    padding-left: 0px;
+  }
+
+  #tibo .mt-4 {
+    margin-top: 4px;
+  }
+
+  #tibo .ml-16 {
+    margin-left: 16px;
+  }
+
+  #tibo .mr-16 {
+    margin-right: 16px;
+  }
+
+  #tibo .mb-16 {
+    margin-bottom: 16px;
+  }
+
+  #tibo .none {
+    display: none;
+  }
+
+  #tibo .block {
+    display: block;
+    transition: 1s;
+  }
+
+  #tibo label.title {
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-top: 2px;
+  }
+
+  #tibo form {
+    background: #fff;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+  }
+
+  #tibo form .empty {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+
+  #tibo form label {
+    color: #787878;
+  }
+
+  #tibo input,
+  #tibo select,
+  #tibo textarea {
+    border-radius: 8px;
+    padding-bottom: 11px;
+  }
+
+  #tibo input::placeholder,
+  #tibo select::placeholder,
+  #tibo textarea::placeholder {
+    color: #ccc;
+    font-size: 12px;
+    padding-bottom: 11px;
+  }
+
+  #tibo label > input[type='radio'] {
+    display: none;
+  }
+
+  #tibo label.radio {
+    margin-right: 8px;
+  }
+
+  #tibo label > input[type='radio'] + *::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+
+  #tibo label > input[type='radio']:checked + *::before {
+    background: radial-gradient(
+      teal 0%,
+      teal 40%,
+      transparent 50%,
+      transparent
+    );
+    border-color: teal;
+  }
+
+  #tibo label > input[type='radio']:checked + * {
+    color: teal;
+  }
+
+  #tibo form .input-group textarea.icon-right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+  }
+
+  #tibo form .input-group input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 0px;
+    padding-bottom: 11px;
+  }
+
+  #tibo form .icon-before {
+    border-left: 1px solid #ced4da !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: none !important;
+    background: none !important;
+  }
+
+  #tibo form .input-group input.two {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-right: 0px;
+    padding-bottom: 11px;
+    border-left: none;
+  }
+
+  #tibo form .input-group span.input-group-text {
+    background: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #555;
+    border-left: none;
+  }
+
+  #tibo form .input-group .input-group-append {
+    cursor: pointer;
+  }
+
+  #tibo form .readimage {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+
+  /*ICON*/
+  #tibo ion-icon {
+    --ionicon-stroke-width: 128px;
+  }
+
+  /*BUTTON*/
+  #tibo button.btn-form {
+    border-radius: 50px;
+    background: rgb(0, 195, 180) !important;
+    border: none;
+    width: 100%;
+  }
+
+  #tibo button.btn-form span ion-icon {
+    padding-top: 8px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background: rgb(0, 195, 180) !important;
+    color: #f3f3f3 !important;
+  }
+
+  #tibo {
+    background: inherit;
+    margin-top: 16px;
+    padding-left: 0px;
+  }
+
+  #tibo .mt-4 {
+    margin-top: 4px;
+  }
+
+  #tibo .ml-16 {
+    margin-left: 16px;
+  }
+
+  #tibo .mr-16 {
+    margin-right: 16px;
+  }
+
+  #tibo .mb-16 {
+    margin-bottom: 16px;
+  }
+
+  #tibo .none {
+    display: none;
+  }
+
+  #tibo .block {
+    display: block;
+    transition: 1s;
+  }
+
+  #tibo label.title {
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-top: 2px;
+  }
+
+  #tibo form {
+    background: #fff;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+  }
+
+  #tibo form .empty {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+
+  #tibo form label {
+    color: #787878;
+  }
+
+  #tibo input,
+  #tibo select,
+  #tibo textarea {
+    border-radius: 8px;
+    padding-bottom: 11px;
+  }
+
+  #tibo input::placeholder,
+  #tibo select::placeholder,
+  #tibo textarea::placeholder {
+    color: #ccc;
+    font-size: 12px;
+    padding-bottom: 11px;
+  }
+
+  #tibo label > input[type='radio'] {
+    display: none;
+  }
+
+  #tibo label.radio {
+    margin-right: 8px;
+  }
+
+  #tibo label > input[type='radio'] + *::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+
+  #tibo label > input[type='radio']:checked + *::before {
+    background: radial-gradient(
+      teal 0%,
+      teal 40%,
+      transparent 50%,
+      transparent
+    );
+    border-color: teal;
+  }
+
+  #tibo label > input[type='radio']:checked + * {
+    color: teal;
+  }
+
+  #tibo form .input-group textarea.icon-right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+  }
+
+  #tibo form .input-group input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 0px;
+    padding-bottom: 11px;
+  }
+
+  #tibo form .icon-before {
+    border-left: 1px solid #ced4da !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: none !important;
+    background: none !important;
+  }
+
+  #tibo form .input-group input.two {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-right: 0px;
+    padding-bottom: 11px;
+    border-left: none;
+  }
+
+  #tibo form .input-group span.input-group-text {
+    background: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #555;
+    border-left: none;
+  }
+
+  #tibo form .input-group .input-group-append {
+    cursor: pointer;
+  }
+
+  #tibo form .readimage {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+
+  /*ICON*/
+  #tibo ion-icon {
+    --ionicon-stroke-width: 128px;
+  }
+
+  /*BUTTON*/
+  #tibo button.btn-form {
+    border-radius: 50px;
+    background: rgb(0, 195, 180) !important;
+    border: none;
+    width: 100%;
+  }
+
+  #tibo button.btn-form span ion-icon {
+    padding-top: 8px;
+  }
+}
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background: rgb(0, 195, 180) !important;
+    color: #f3f3f3 !important;
+  }
+
+  #tibo {
+    background: inherit;
+    margin-top: 16px;
+    padding-left: 0px;
+  }
+
+  #tibo .mt-4 {
+    margin-top: 4px;
+  }
+
+  #tibo .ml-16 {
+    margin-left: 16px;
+  }
+
+  #tibo .mr-16 {
+    margin-right: 16px;
+  }
+
+  #tibo .mb-16 {
+    margin-bottom: 16px;
+  }
+
+  #tibo .none {
+    display: none;
+  }
+
+  #tibo .block {
+    display: block;
+    transition: 1s;
+  }
+
+  #tibo label.title {
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-top: 2px;
+  }
+
+  #tibo form {
+    background: #fff;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px -3px 32px -15px rgba(0, 0, 0, 0.75);
+  }
+
+  #tibo form .empty {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+
+  #tibo form label {
+    color: #787878;
+  }
+
+  #tibo input,
+  #tibo select,
+  #tibo textarea {
+    border-radius: 8px;
+    padding-bottom: 11px;
+  }
+
+  #tibo input::placeholder,
+  #tibo select::placeholder,
+  #tibo textarea::placeholder {
+    color: #ccc;
+    font-size: 12px;
+    padding-bottom: 11px;
+  }
+
+  #tibo label > input[type='radio'] {
+    display: none;
+  }
+
+  #tibo label.radio {
+    margin-right: 8px;
+  }
+
+  #tibo label > input[type='radio'] + *::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+
+  #tibo label > input[type='radio']:checked + *::before {
+    background: radial-gradient(
+      teal 0%,
+      teal 40%,
+      transparent 50%,
+      transparent
+    );
+    border-color: teal;
+  }
+
+  #tibo label > input[type='radio']:checked + * {
+    color: teal;
+  }
+
+  #tibo form .input-group textarea.icon-right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+  }
+
+  #tibo form .input-group input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 0px;
+    padding-bottom: 11px;
+  }
+
+  #tibo form .icon-before {
+    border-left: 1px solid #ced4da !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: none !important;
+    background: none !important;
+  }
+
+  #tibo form .input-group input.two {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-right: 0px;
+    padding-bottom: 11px;
+    border-left: none;
+  }
+
+  #tibo form .input-group span.input-group-text {
+    background: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #555;
+    border-left: none;
+  }
+
+  #tibo form .input-group .input-group-append {
+    cursor: pointer;
+  }
+
+  #tibo form .readimage {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+
+  /*ICON*/
+  #tibo ion-icon {
+    --ionicon-stroke-width: 128px;
+  }
+
+  /*BUTTON*/
+  #tibo button.btn-form {
+    border-radius: 50px;
+    background: rgb(0, 195, 180) !important;
+    border: none;
+    width: 100%;
+  }
+
+  #tibo button.btn-form span ion-icon {
+    padding-top: 8px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

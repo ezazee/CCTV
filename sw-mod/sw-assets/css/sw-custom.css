@@ -1,0 +1,410 @@
+:focus {
+  outline: 0;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.splashscreen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: #ffffff;
+  background-image: url('https://sisters-kominda.eagleye.id/sw-mod/sw-assets/img/splashscreen.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.loading {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 999999;
+}
+
+.wallet-card .wallet-footer .webcame {
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.wallet-card .wallet-footer .webcame canvas {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+  float: right;
+}
+
+.wallet-card .wallet-footer .webcame video {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* --------------------------------
+    Pagination
+-----------------------------------*/
+div.dataTables_paginate ul.pagination {
+  float: right;
+}
+div.dataTables_info {
+  padding-top: 8px;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  margin: 0 1px;
+  color: #333;
+  padding: 5px 10px;
+  line-height: 33px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: solid 1px #eee;
+}
+
+.pagination > li > a:hover {
+  color: #ffffff;
+  background: #ff396f;
+  border-color: #ff396f;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  z-index: 2;
+  color: #ffffff;
+  cursor: default;
+  background: #ff396f;
+  border-color: #ff396f;
+}
+.avatar-section {
+  position: relative;
+}
+.avatar-section input[type='file'] {
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 67px;
+  width: 85%;
+  z-index: 99;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* -----  ID Card -----------*/
+.id-card {
+  position: relative;
+  width: 300px;
+  height: 430px;
+  margin: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 9%);
+}
+
+.id-card .body-id-card {
+  height: 100%;
+  width: 100%;
+  padding: 20px 30px 30px 30px;
+}
+
+.id-card .body-id-card img {
+  position: relative;
+}
+
+.id-card .body-id-card .logo {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+.id-card .body-id-card .logo img {
+  float: left;
+  height: 15px;
+}
+
+.id-card .body-id-card .avatar {
+  margin-bottom: 10px;
+}
+
+.id-card .body-id-card .avatar img {
+  width: 80px;
+  height: auto;
+}
+
+.id-card .body-id-card h3 {
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+}
+
+.id-card .body-id-card ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-size: 13px;
+  color: #111111;
+}
+
+.id-card .body-id-card li {
+  list-style: none;
+}
+.id-card .body-id-card li span {
+  width: 50px;
+  display: inline-block;
+}
+
+.id-card .body-id-card p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 600;
+}
+
+.id-card .body-id-card .barcode {
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 9%);
+  margin-top: 20px;
+  border: solid 4px #ffffff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.id-card .body-id-card .barcode img {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* --------- WEBCAME -----------*/
+.webcam-capture-body {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+
+.webcam-capture,
+.webcam-capture video {
+  display: inline-block;
+  width: 100% !important;
+  height: auto !important;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.webcam-capture-body .webcam-camera {
+  position: relative;
+  background: #ffffff;
+  padding: 20px;
+  border: solid 1px #eeeeee;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.webcam-capture-body .webcam-camera img {
+  width: 100%;
+  object-fit: cover;
+  background: #eeeeee;
+  border: solid 1px #eeeeee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.webcam-capture-body input[type='file'] {
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 15px;
+  padding-left: 25px;
+  width: 100%;
+  height: 60px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.select {
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 690px) {
+  .wallet-card .wallet-footer .webcame canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .wallet-card .wallet-footer .webcame video {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wallet-card .wallet-footer .webcame canvas {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .wallet-card .wallet-footer .webcame video {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  div.dataTables_filter label {
+    float: left;
+  }
+  div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: 180px;
+  }
+
+  .wallet-card {
+    padding: 50px 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .id-card {
+    position: relative;
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .stat-box .value {
+    font-size: 15px;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+
+  header,
+  footer,
+  aside,
+  nav,
+  form,
+  iframe,
+  .menu,
+  .hero,
+  .adslot {
+    display: none;
+  }
+}
+
+@page: right {
+  @bottom-right {
+    content: counter(page);
+  }
+}
+
+@page: left {
+  @bottom-left {
+    content: counter(page);
+  }
+}
+
+/* swal custom size */
+@media (max-width: 500px) {
+  .swal-modal {
+    width: calc(60% - 20px);
+    border-radius: 10px;
+  }
+
+  .swal-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .swal-title:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .swal-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .swal-footer {
+    text-align: center;
+  }
+
+  .swal-button-container {
+    margin: 0px;
+  }
+  .swal-button-container .swal-button {
+    border-radius: 10px;
+    padding: 4px 36px;
+  }
+}
